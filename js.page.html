@@ -1,0 +1,39 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form>
+            <label>Name</label><br>
+            <input id="s_name" type="text"/>
+            <br>
+            <label>Email</label><br>
+            <input id="email" type="email"/>
+            <br>
+            <button onclick="getdata()">Submit</button>
+        </form>
+        
+    </body>
+    <script>
+        function getdata(){
+            let name=document.getElementById("s_name").value
+            let email=document.getElementById("email").value
+            alert(name);/*summit if didn't enter data we click means alter msg will notifiy*/
+            if(name==""){
+                alert("please enter your name");
+            }
+            else if(email==""){
+                alert("please enter email");
+            }
+            else{
+                alert("Hello "+name+" "+email);
+            }
+        }
+      
+    </script>
+    </html>
+</html>
